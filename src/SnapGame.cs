@@ -9,7 +9,11 @@ namespace CardGames
         public static void LoadResources()
         {
             Bitmap cards;
+            Font font;
+            SoundEffect slap;
             cards = SwinGame.LoadBitmapNamed ("Cards", "Cards.png");
+            font = SwinGame.LoadFontNamed ("GameFont", "Chunkfive.otf", 24);
+            slap = SwinGame.LoadSoundEffectNamed ("Slap", "slap.wav");
             SwinGame.BitmapSetCellDetails (cards, 82, 110, 13, 5, 53);      // set the cells in the bitmap to match the cards
         }
 

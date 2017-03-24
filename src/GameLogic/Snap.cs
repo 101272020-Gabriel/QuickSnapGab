@@ -105,6 +105,7 @@ namespace CardGames.GameLogic
 				_topCards [1] = _deck.Draw ();		// get a new top card
 				_topCards[1].TurnOver();			// reveal card
 			}
+            SwinGame.PlaySoundEffect ("Slap");
 		}
 
 		/// <summary>
